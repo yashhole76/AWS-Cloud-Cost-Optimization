@@ -7,7 +7,7 @@ When EC2 instances are terminated, their attached EBS volumes are sometimes left
 
 ## 🏗️ Architecture Overview
 
-![Architecture Diagram](./architecture/architecture-diagram.png)
+![Architecture Diagram](./architecture-diagram.png)
 
 - **Amazon EventBridge:** Triggers the Lambda function on a daily schedule
 - **AWS Lambda (Python + Boto3):** Scans the account for EBS volumes in `available` (unattached) state and deletes them
